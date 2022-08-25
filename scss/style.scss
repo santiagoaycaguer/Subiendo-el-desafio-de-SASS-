@@ -1,0 +1,36 @@
+/* A todo esto lo estoy haciendo sobre un html de una clase anterior del curso
+porque si lo hacia sobre el proyecto no me tomaba el css original*/
+
+// segundo poder de sass = VARIABLES
+
+@import "utilities/variables";
+
+// primer poder de sass = NESTING
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    header{
+        background-color: $color-principal;
+        margin: 1rem;
+        padding: 1rem;
+        h1{
+            color: $color-tipografias;
+            font-size: 2rem;
+            text-align: center;
+        }
+        /*estilos menu*/
+        nav{
+            background-color: $color-secundario;
+            display: flex;
+            justify-content: center;
+            ul{
+                li{
+                    background-color: $color-botones;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
